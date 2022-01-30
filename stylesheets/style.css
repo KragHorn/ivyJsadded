@@ -1,0 +1,322 @@
+/* custome color pallet
+logo hsl color match {145 100 19.2}
+*/
+
+:root {
+    --main-hue: 145;
+    --main-color: hsl(var(--main-hue) 100% 19.2%);
+    --main-color-light: hsl(var(--main-hue) 100% 81%);
+    --main-color-med: hsl(var(--main-hue) 100% 60%);
+    --main-color-dark: hsl(var(--main-hue) 100% 8%);
+    --main-color-hover: hsl(var(--main-hue) 100% 27%);
+    --main-color-darker: hsl(var(--main-hue) 100% 0%);
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItems {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu {
+    padding: 2vw;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 1000;
+    letter-spacing: .5px;
+    transition: all .3s ease 0;
+}
+
+.nav a:hover {
+    color: var(--main-color-hover);
+}
+
+.nav a:visited {
+    text-decoration: none;
+}
+
+.bkground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/bkground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    min-height: 200px;
+    width: 100%;
+}
+
+.logo {
+    margin: 3rem auto;
+    max-width: 30vw;
+    filter: drop-shadow(0px 0px 50px var(--main-color-darker));
+}
+
+.stylest-area {
+    width: 100%;
+    height: 400px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* filter: drop-shadow(10px 10px 20px var(--main-color)); */
+}
+
+.arrow {
+    top: 50%;
+    height: 5vw;
+    width: 5vw;
+}
+
+.stylest-area #left,
+#right {
+    /* top: 50%; */
+    font-size: 5vw;
+    cursor: pointer;
+}
+
+.stylest-area #left {
+    display: none;
+    color: var(--main-color-med);
+}
+
+.stylest-area #right {
+    color: var(--main-color-med);
+}
+
+.stylest-area #left:hover,
+#right:hover {
+    color: var(--main-color-hover);
+}
+
+.card-animation {
+    height: 350px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-container {
+    position: relative;
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 400ms ease-in-out;
+}
+
+.stylest-card {
+    height: 350px;
+    width: 500px;
+    background-image: url("/images/cardBk.png");
+    border: 1px solid var(--main-color-dark);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(10px 10px 5px var(--main-color-dark));
+    position: absolute;
+}
+
+.stylest-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+    height: 295px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+.side-card {
+    position: relative;
+    top: 5px;
+    left: 140px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.stylest-name {
+    padding: .5rem;
+}
+
+.stylest-spec {
+    padding: .5rem
+}
+
+.stylest-about {
+    color: var(--main-color-light);
+    padding: 1em .5em;
+}
+
+.stylest-text {
+    font-size: .75em;
+}
+
+.stylest-area h3 {
+    color: var(--main-color-light);
+    font-weight: bold;
+}
+
+.stylest-area h6 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--main-color-light);
+    font-weight: bold;
+}
+
+.book-link {
+    padding: 2em;
+}
+
+.stylest-area a {
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--main-color-light);
+    border-radius: 6px;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    /* filter: drop-shadow(5px 5px 10px var(--main-color-darker)); */
+}
+
+.stylest-area a:hover {
+    background-color: var(--main-color-hover);
+}
+
+.store-info {
+    background-image: url("/images/pole2.jpg");
+    background-position: center;
+    background-size: 60%;
+    background-repeat: repeat;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.info-grid {
+    margin: 2rem;
+}
+
+.info-grid h1,
+h3,
+h4,
+table {
+    font-weight: bolder;
+    color: var(--main-color);
+    filter: drop-shadow(2px 2px 20px var(--main-color-darker));
+}
+
+.store-hours {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.table-caption {
+    text-align: left;
+    margin-bottom: .25rem;
+}
+
+.social-media {
+    font-size: 3em;
+    margin-top: 2rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 1000;
+    letter-spacing: .5px;
+    transition: all .3s ease 0;
+    filter: drop-shadow(2px 2px 20px var(--main-color-darker));
+}
+
+.social-media a:hover {
+    color: var(--main-color-hover);
+}
+
+.social-media a:visited {
+    text-decoration: none;
+}
+
+@media only screen and (max-width:600px) {
+    .nav {
+        display: none;
+    }
+    .stylest-area {
+        height: 700px;
+    }
+    .card-animation {
+        height: 650px;
+    }
+    .card-container {
+        width: 650px;
+    }
+    .stylest-card {
+        width: 300px;
+        height: 650px;
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: flex-end; */
+        /* align-items: center; */
+    }
+    .isVis {
+        display: none;
+    }
+    .side-card {
+        position: static !important;
+        top: auto;
+        left: auto;
+    }
+    .store-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    .social-media {
+        margin-bottom: 1em;
+    }
+}
