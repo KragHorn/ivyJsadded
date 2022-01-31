@@ -15,7 +15,7 @@ xhttp.onreadystatechange = function() {
             }
             output += `<div class="stylest-card ${isVisable} " id="_card">
             <div class="stylest-image">
-                <img class="profile-image" src="/images/${stylest[i].image}" alt="Ivy">
+                <img class="profile-image" src="./images/${stylest[i].image}" alt="Ivy">
             </div>
              <div class="stylest-info" id="stylest-info">
                 <ul class="side-card">
@@ -43,5 +43,5 @@ xhttp.onreadystatechange = function() {
     }
 
 };
-xhttp.open("GET", "/json/stylest.json", true);
+xhttp.open("GET", "./json/stylest.json", true);
 xhttp.send();

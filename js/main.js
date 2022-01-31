@@ -7,6 +7,8 @@ let cardWidth = cardConArray[0].getBoundingClientRect().width;
 window.addEventListener('resize', e => {
     cardWidth = cardConArray[0].getBoundingClientRect().width;
     cardConArray.forEach(setCardPostion);
+    const currentCard = cardContainer.querySelector('.isVis');
+    moveCard(cardContainer, currentCard, currentCard);
 })
 console.log(cardWidth);
 
