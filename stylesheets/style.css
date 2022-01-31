@@ -64,7 +64,7 @@ logo hsl color match {145 100 19.2}
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./images/bkground2.jpg");
+    background-image: url("/images/bkground2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -138,7 +138,7 @@ logo hsl color match {145 100 19.2}
 .stylest-card {
     height: 350px;
     width: 500px;
-    background-image: url("./images/cardBk.png");
+    background-image: url("/images/cardBk.png");
     border: 1px solid var(--main-color-dark);
     border-radius: 10px;
     display: flex;
@@ -225,7 +225,7 @@ logo hsl color match {145 100 19.2}
 }
 
 .store-info {
-    background-image: url("./images/pole2.jpg");
+    background-image: url("/images/pole2.jpg");
     background-position: center;
     background-size: 60%;
     background-repeat: repeat;
