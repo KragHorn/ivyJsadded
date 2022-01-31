@@ -2,8 +2,13 @@ const cardContainer = document.querySelector('.card-container');
 const cardConArray = Array.from(cardContainer.children);
 const prevArrow = document.getElementById('left');
 const nextArrow = document.getElementById('right');
-const cardWidth = cardConArray[0].getBoundingClientRect().width;
 
+let cardWidth = cardConArray[0].getBoundingClientRect().width;
+window.addEventListener('resize', e => {
+    cardWidth = cardConArray[0].getBoundingClientRect().width;
+    cardConArray.forEach(setCardPostion);
+})
+console.log(cardWidth);
 
 //set scard position
 
@@ -39,7 +44,7 @@ const arrowVis = (arrow, currentCard, cardConArray) => {
 
 //slide right
 nextArrow.addEventListener('click', e => {
-
+    const cardWidth = cardConArray[0].getBoundingClientRect().width;
     const currentCard = cardContainer.querySelector('.isVis');
     const nextCard = currentCard.nextElementSibling;
 
@@ -47,13 +52,14 @@ nextArrow.addEventListener('click', e => {
     arrowVis("right", nextCard, cardConArray)
 })
 
+
 //slide left
 prevArrow.addEventListener('click', e => {
-
+    const cardWidth = cardConArray[0].getBoundingClientRect().width;
     const currentCard = cardContainer.querySelector('.isVis');
     const prevCard = currentCard.previousElementSibling;
 
-
     moveCard(cardContainer, currentCard, prevCard);
     arrowVis("right", prevCard, cardConArray)
+
 })

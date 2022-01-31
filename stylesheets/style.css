@@ -122,6 +122,7 @@ logo hsl color match {145 100 19.2}
     width: 500px;
     overflow: hidden;
     border-radius: 10px;
+    filter: drop-shadow(10px 10px 5px var(--main-color-dark));
 }
 
 .card-container {
@@ -144,7 +145,6 @@ logo hsl color match {145 100 19.2}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(10px 10px 5px var(--main-color-dark));
     position: absolute;
 }
 
@@ -289,20 +289,19 @@ table {
     }
     .card-animation {
         height: 650px;
+        width: 300px;
     }
     .card-container {
-        width: 650px;
+        height: 650px;
+        width: 300px;
     }
     .stylest-card {
         width: 300px;
         height: 650px;
         display: flex;
-        /* flex-direction: column; */
-        /* justify-content: flex-end; */
-        /* align-items: center; */
-    }
-    .isVis {
-        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
     }
     .side-card {
         position: static !important;
